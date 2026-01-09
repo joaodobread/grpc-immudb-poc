@@ -60,12 +60,6 @@ This starts an ImmuDB instance with the default credentials configured.
 
 ### Services
 
-#### Audit Service
-
-Logs audit events to ImmuDB with cryptographic verification.
-
-- `Track(TrackRequest) -> TrackResponse`: Record an audit event
-
 #### Product Service
 
 Manages and queries products stored in ImmuDB.
