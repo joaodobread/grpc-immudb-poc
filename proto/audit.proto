@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package audit;
+
+service Audit {
+  rpc Track(TrackRequest) returns (TrackResponse);
+}
+
+message TrackRequest {
+  string message = 1;
+}
+
+message TrackResponse {
+  bool success = 1;
+}

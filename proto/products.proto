@@ -1,0 +1,19 @@
+syntax="proto3";
+
+package products;
+
+message Empty {};
+
+service ProductService {
+  rpc ListAll(Empty) returns (ListAllResponse);
+}
+
+message ListAllResponse {
+  repeated Product list = 1;
+}
+
+message Product {
+  int32 id = 1;
+  string product = 2;
+  string price = 3;
+};

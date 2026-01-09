@@ -1,0 +1,7 @@
+services:
+  immudb:
+    image: codenotary/immudb
+    ports:
+      - "3322:3322"
+      - "9497:9497"
+      - "8080:8080"
